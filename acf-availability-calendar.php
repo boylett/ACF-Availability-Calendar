@@ -2,8 +2,9 @@
 
 	/**
 	 * ACF Availability Calendar Field
-	 * @version  0.0.1
-	 * @author   Ryan Boylett <https://github.com/boylett/>
+	 * @version      0.0.1
+	 * @author       Ryan Boylett <https://github.com/boylett/>
+	 * @contributors Giedrius <https://codepen.io/dzentbolas/pen/QjXQVw>
 	 */
 
 	add_action('acf/include_field_types', function()
