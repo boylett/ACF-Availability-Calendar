@@ -40,6 +40,7 @@
 			{ ?>
 
 				<script type="text/javascript">
+					// Shoutout to Giedrius <https://codepen.io/dzentbolas/pen/QjXQVw>
 					jQuery.datepicker._updateDatepicker_original = jQuery.datepicker._updateDatepicker;
 					jQuery.datepicker._updateDatepicker = function(inst)
 					{
@@ -354,6 +355,7 @@
 						'<div id="acf-availability-calendar-' . esc_attr($field['key']) . '"></div>' .
 						'<script type="text/javascript">' .
 							'window.addEventListener(\'load\',function(){' .
+								'/* Shoutout to Giedrius - https://codepen.io/dzentbolas/pen/QjXQVw */' .
 								'jQuery.datepicker._updateDatepicker_original=jQuery.datepicker._updateDatepicker;jQuery.datepicker._updateDatepicker=function(i){jQuery.datepicker._updateDatepicker_original(i);var a=this._get(i,\'afterShow\');if(a)a.apply((i.input?i.input[0]:null))};' .
 								'jQuery(\'#acf-availability-calendar-' . esc_attr($field['key']) . '\').datepicker(' .
 									str_replace('"afterShowCallback"', $callback, json_encode(array
